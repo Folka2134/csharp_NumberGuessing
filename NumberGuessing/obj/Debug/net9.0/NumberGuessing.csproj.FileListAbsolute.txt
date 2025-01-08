@@ -1,0 +1,15 @@
+/Users/folka/Programming/learning/csharp/games/NumberGuessing/NumberGuessing/bin/Debug/net9.0/NumberGuessing
+/Users/folka/Programming/learning/csharp/games/NumberGuessing/NumberGuessing/bin/Debug/net9.0/NumberGuessing.deps.json
+/Users/folka/Programming/learning/csharp/games/NumberGuessing/NumberGuessing/bin/Debug/net9.0/NumberGuessing.runtimeconfig.json
+/Users/folka/Programming/learning/csharp/games/NumberGuessing/NumberGuessing/bin/Debug/net9.0/NumberGuessing.dll
+/Users/folka/Programming/learning/csharp/games/NumberGuessing/NumberGuessing/bin/Debug/net9.0/NumberGuessing.pdb
+/Users/folka/Programming/learning/csharp/games/NumberGuessing/NumberGuessing/obj/Debug/net9.0/NumberGuessing.GeneratedMSBuildEditorConfig.editorconfig
+/Users/folka/Programming/learning/csharp/games/NumberGuessing/NumberGuessing/obj/Debug/net9.0/NumberGuessing.AssemblyInfoInputs.cache
+/Users/folka/Programming/learning/csharp/games/NumberGuessing/NumberGuessing/obj/Debug/net9.0/NumberGuessing.AssemblyInfo.cs
+/Users/folka/Programming/learning/csharp/games/NumberGuessing/NumberGuessing/obj/Debug/net9.0/NumberGuessing.csproj.CoreCompileInputs.cache
+/Users/folka/Programming/learning/csharp/games/NumberGuessing/NumberGuessing/obj/Debug/net9.0/NumberGuessing.sourcelink.json
+/Users/folka/Programming/learning/csharp/games/NumberGuessing/NumberGuessing/obj/Debug/net9.0/NumberGuessing.dll
+/Users/folka/Programming/learning/csharp/games/NumberGuessing/NumberGuessing/obj/Debug/net9.0/refint/NumberGuessing.dll
+/Users/folka/Programming/learning/csharp/games/NumberGuessing/NumberGuessing/obj/Debug/net9.0/NumberGuessing.pdb
+/Users/folka/Programming/learning/csharp/games/NumberGuessing/NumberGuessing/obj/Debug/net9.0/NumberGuessing.genruntimeconfig.cache
+/Users/folka/Programming/learning/csharp/games/NumberGuessing/NumberGuessing/obj/Debug/net9.0/ref/NumberGuessing.dll
