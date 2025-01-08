@@ -4,5 +4,6 @@ namespace NumberGuessing.Views
     {
         void DisplayMessage(string message);
         string UserInput();
+        string SetMaxNumber();
     }
 }

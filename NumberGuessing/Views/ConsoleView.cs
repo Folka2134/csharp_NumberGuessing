@@ -11,5 +11,9 @@ namespace NumberGuessing.Views
         {
             return Console.ReadLine();
         }
+        public string SetMaxNumber()
+        {
+            return Console.ReadLine();
+        }
     }
 }
