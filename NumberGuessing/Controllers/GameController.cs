@@ -7,13 +7,13 @@ namespace NumberGuessing.Controllers
     {
         private int lives;
         private readonly IConsoleView _view;
-        private readonly IGenerateNumber _generate;
+        private readonly IGenerateNumber _generator;
 
-        public GameController(IConsoleView view, IGenerateNumber generate)
+        public GameController(IConsoleView view, IGenerateNumber generator)
         {
             lives = 3;
             _view = view;
-            _generate = generate;
+            _generator = generator;
         }
 
         public void Run()
@@ -22,14 +22,15 @@ namespace NumberGuessing.Controllers
             Console.WriteLine();
             _view.DisplayMessage("Set a maximum number: ");
             int max = int.Parse(_view.SetMaxNumber());
-            int randomNumber = _generate.Generate(max);
+            int randomNumber = _generator.Generate(max);
 
             while (true)
             {
                 if (lives == 0)
                 {
+                    Console.WriteLine();
                     _view.DisplayMessage("You ran out of lives!");
-                    _view.DisplayMessage("Please try again");
+                    _view.DisplayMessage($"The number was: {randomNumber}");
                     break;
                 }
 
