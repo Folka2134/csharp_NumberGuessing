@@ -3,6 +3,16 @@ using NumberGuessing.Views;
 
 namespace NumberGuessing.Controllers
 {
+    public static class GameMessages
+    {
+        public const string Welcome = "You ran out of lives!";
+        public const string OutOfLives = "You ran out of lives!";
+        public const string CorrectNumber = "The number was: {0}";
+        public const string Victory = "You got it!";
+        public const string Exiting = "Exiting game...";
+        public const string InvalidInput = "Invalid input! Please enter a number.";
+    }
+
     public class GameController
     {
         private int lives;
@@ -29,8 +39,8 @@ namespace NumberGuessing.Controllers
                 if (lives == 0)
                 {
                     Console.WriteLine();
-                    _view.DisplayMessage("You ran out of lives!");
-                    _view.DisplayMessage($"The number was: {randomNumber}");
+                    _view.DisplayMessage(GameMessages.OutOfLives);
+                    _view.DisplayMessage(string.Format(GameMessages.CorrectNumber, randomNumber));
                     break;
                 }
 
@@ -39,25 +49,32 @@ namespace NumberGuessing.Controllers
                 var input = _view.UserInput();
                 if (input.ToLower() == "quit")
                 {
-                    _view.DisplayMessage("Exiting game...");
+                    _view.DisplayMessage(GameMessages.Exiting);
                     break;
                 }
 
-                var guess = int.Parse(input);
-                if (guess > randomNumber)
+                try
                 {
-                    _view.DisplayMessage("Too high!");
-                    lives--;
+                    var guess = int.Parse(input);
+                    if (guess > randomNumber)
+                    {
+                        _view.DisplayMessage("Too high!");
+                        lives--;
+                    }
+                    else if (guess < randomNumber)
+                    {
+                        _view.DisplayMessage("Too low!");
+                        lives--;
+                    }
+                    else
+                    {
+                        _view.DisplayMessage(GameMessages.Victory);
+                        break;
+                    }
                 }
-                else if (guess < randomNumber)
+                catch (FormatException)
                 {
-                    _view.DisplayMessage("Too low!");
-                    lives--;
-                }
-                else
-                {
-                    _view.DisplayMessage("You got it!");
-                    break;
+                    _view.DisplayMessage(GameMessages.InvalidInput);
                 }
             }
         }
